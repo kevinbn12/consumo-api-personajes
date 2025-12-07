@@ -41,9 +41,7 @@ export class RickAndMortyDetail implements OnInit {
         this.gender = RickAndMortyDetailResponse.gender
         this.image = RickAndMortyDetailResponse.image
         this.origin = RickAndMortyDetailResponse.origin
-        console.log(this.origin)
         this.location = RickAndMortyDetailResponse.location
-        console.log(this.location)
         this.created = RickAndMortyDetailResponse.created
         this._cdr.markForCheck()
       })

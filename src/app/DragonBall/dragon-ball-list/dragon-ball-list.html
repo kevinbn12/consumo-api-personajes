@@ -1,1 +1,14 @@
-<p>dragon-ball-list works!</p>
+<h1>Dragon Ball Charactrers</h1>
+
+<div class="container">
+    @for(item of items;track id){
+        <div class="card" (click)="navigateToDetail(item.id)">
+        <img src="{{item.image}}" alt="">
+        <div class="card-content">
+            <h3><strong>{{item.name}}</strong></h3>
+            <p>Raza: {{item.race}}</p>
+            <p>Ki: {{item.ki}}</p>
+        </div>
+    </div>
+    }
+</div>

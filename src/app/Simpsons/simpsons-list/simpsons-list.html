@@ -9,7 +9,7 @@
             <td><strong>Estado</strong></td>
             <td><strong></strong></td>
         </tr>
-        @for (result of results;track id){
+        @for (result of results; track result.id) {
             <tr>
                <td>{{result.id}}</td>
                <td>{{result.name}}</td>
