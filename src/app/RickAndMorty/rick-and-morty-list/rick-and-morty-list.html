@@ -1,1 +1,17 @@
-<p>rick-and-morty-list works!</p>
+<div class="main-container">
+    <h1>Rick And Morty Characters</h1>
+
+    <div class="container">
+        @for (result of results; track result.id) {
+            <div class="card" (click)="navigateToDetail(result.id)">
+                <img [src]="result.image" [alt]="result.name">
+                <div class="card-body">
+                    <h2><strong>{{result.name}}</strong></h2>
+                    <h3>{{result.gender}} - {{result.status}}</h3>
+                    <h3>{{result.type || 'Unknown type'}}</h3>
+                    <h3>{{result.species}}</h3>
+                </div>
+            </div>
+        }
+    </div>
+</div>

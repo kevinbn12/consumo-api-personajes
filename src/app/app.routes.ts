@@ -13,5 +13,5 @@ export const routes: Routes = [
     {path: 'Simpsons/:id', component: SimpsonsDetail},
     {path: 'DragonBall', component: DragonBallList},
     {path: 'DragonBall/:id', component: DragonBallDetail},
-    {path: '**' , redirectTo: 'RickAndMorty', pathMatch:'full'}
+    {path: '**' , redirectTo: '/RickAndMorty'}
 ];

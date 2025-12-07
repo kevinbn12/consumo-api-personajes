@@ -1,1 +1,14 @@
-<p>rick-and-morty-detail works!</p>
+<div class="container">
+    <div class="card">
+        <img src="{{image}}" alt="img-character">
+        <div class="card-content">
+            <h2>{{name}}</h2>
+            <h3>Genero:{{gender}} - Estado: {{status}}</h3>
+            <h3>tipo: {{type}}</h3>
+            <h3>Especie: {{species}}</h3>
+            <h3>Origen: {{origin.name}}</h3>
+            <h3>Ubicacion: {{location.name}}</h3>
+            <h3>Fecha de creacion: {{created | date}}</h3>
+        </div>
+    </div>
+</div>
