@@ -1,1 +1,23 @@
-<p>simpsons-list works!</p>
+<h1><strong>Characters los Simpsons</strong></h1>
+<div class="container">
+    <table>
+        <tr>
+            <td><strong>Id</strong></td>
+            <td><strong>Nombre</strong></td>
+            <td><strong>Edad</strong></td>
+            <td><strong>Genero</strong></td>
+            <td><strong>Estado</strong></td>
+            <td><strong></strong></td>
+        </tr>
+        @for (result of results;track id){
+            <tr>
+               <td>{{result.id}}</td>
+               <td>{{result.name}}</td>
+               <td>{{result.age}}</td>
+               <td>{{result.gender}}</td>
+               <td>{{result.status}}</td>
+               <td><button (click)="navigateToDetail(result.id)">Ver mas</button></td>
+            </tr>
+        }
+    </table>
+</div>

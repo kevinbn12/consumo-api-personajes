@@ -1,0 +1,44 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: #FED90F;
+    font-size: 80px;
+}
+
+.container{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: 5px #FED90F solid;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #70D1FE;
+    width: 1000px;
+    color: #000;
+    font-size: 20px;
+}
+
+table tr{
+    height: 60px;
+}
+table tr td button{
+    background-color: #FED90F;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    color: rgb(110, 110, 110);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+table tr td{
+    align-items: center;
+    justify-content: center;
+}
