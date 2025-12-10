@@ -13,6 +13,7 @@ import { SimpsonsResponse } from '../../models/Simpsons/SimpsonsListModel';
 export class SimpsonsList implements OnInit {
   protected results: any[] = [];
   protected id: number = 0
+  protected image : string = ""
 
 
   constructor(
@@ -27,6 +28,9 @@ export class SimpsonsList implements OnInit {
       this.results = Array.isArray(simpsonsResponse.results)
         ? simpsonsResponse.results
         : [simpsonsResponse.results];
+      this.id = simpsonsResponse.results.id
+      this.image = simpsonsResponse.results.portrait_path
+      console.log(simpsonsResponse.results.portrait_path)
       this._cdr.markForCheck();
     });
   }

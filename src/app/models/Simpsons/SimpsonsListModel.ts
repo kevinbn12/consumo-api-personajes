@@ -7,5 +7,6 @@ export interface SimsonsSimple{
     name:string;
     age:number;
     status:string;
-    gender:string; 
+    gender:string;
+    portrait_path:any
 }

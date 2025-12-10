@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SimpsonsDetail implements OnInit {
+  protected id : number = 0
   protected  name : string = ''
   protected  age : number =0
   protected  birthdate : string = ''
@@ -18,7 +19,7 @@ export class SimpsonsDetail implements OnInit {
   protected  description : string = ''
   protected  ocupation:string = ''
   protected  phrases:string[]=[]
-  
+
   constructor (
     private _simpsosApiService : SimpsonsApiService,
     private _activedRoute: ActivatedRoute,
@@ -29,6 +30,7 @@ export class SimpsonsDetail implements OnInit {
     this._activedRoute.params.subscribe(params => {
       console.log(params['id'])
       this._simpsosApiService.getSimpsonsDetail(params['id']).subscribe(SimpsonsResponse=>{
+        this.id = SimpsonsResponse.id
         this.name = SimpsonsResponse.name
         this.age = SimpsonsResponse.age
         this.birthdate = SimpsonsResponse.birthdate

@@ -23,3 +23,9 @@ h1{
     color: #000;
     font-size: 20px;
 }
+
+.card img{
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+}
